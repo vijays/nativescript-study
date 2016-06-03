@@ -1,0 +1,11 @@
+<StackLayout>
+    <Label>Weather App</Label>
+	
+    <TextField hint="City/State.." [(ngModel)]="_city"></TextField>
+
+	<Button text="Get Temperature" (tap)="onSubmit()"></Button><br><br>
+	
+    <Label	text={{_location}}></Label>
+    <Label	text={{_temperature_in_c}}></Label>
+    <Label	text={{_condition}}></Label>
+</StackLayout>
